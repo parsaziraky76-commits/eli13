@@ -1,0 +1,13 @@
+[advisories]
+ignore = [
+    # Vulnerabilities
+    "RUSTSEC-2023-0071", # Tor RSA signature verification
+    "RUSTSEC-2026-0459", # libsqlite3-sys CVE-2026-119375
+
+    # Unsoundness findings
+    "RUSTSEC-2026-0386", # tokio AsyncFd I/O safety
+
+    # Unmaintained dependencies
+    "RUSTSEC-2025-0141", # bincode is unmaintained
+    "RUSTSEC-2024-0436", # paste is unmaintained
+]
