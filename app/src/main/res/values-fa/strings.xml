@@ -75,7 +75,7 @@
 
     <!-- About panel -->
     <string name="about_title">درباره</string>
-    <string name="about_subtitle">دربارهٔ دوپامین و مجوزهای آن</string>
+    <string name="about_subtitle">ارتباط با پشتیبانی دوپامین</string>
 <string name="menu_open">باز کردن منو</string>
     <string name="advanced_open">باز کردن تنظیمات پیشرفته</string>
 
@@ -952,11 +952,6 @@
     <string name="no_perm_title">غیرفعال‌کردن جابه‌جایی افزونه‌ها</string>
     <string name="no_perm_desc">به‌جای جابه‌جایی تصادفی ⁨Chrome⁩ در هر دست‌دهی، ترتیب افزونه‌ها ثابت می‌ماند.</string>
     <string name="dopamine_brand">DOPAMINE</string>
-    <string name="about_app_version_label">نسخهٔ برنامه</string>
-    <string name="about_core_version_label">نسخهٔ هستهٔ Aether</string>
-    <string name="about_hev_version_label">نسخهٔ hev-socks5-tunnel</string>
-    <string name="about_support_id_title">آیدی پشتیبانی</string>
-    <string name="about_license_title">مجوز و قدردانی</string>
-    <string name="about_license_body">DOPAMINE نرم‌افزاری آزاد و منتشرشده تحت مجوز GNU AGPL-3.0 است. این برنامه بر پایهٔ Aether از CluvexStudio (با مجوز AGPL-3.0)، هستهٔ hev-socks5-tunnel از heiher (با مجوز MIT)، هستهٔ تونل Psiphon و انتقال‌گر افزونه‌ای Tor با نام Lyrebird ساخته شده است. از همهٔ این پروژه‌ها سپاسگزاریم.</string>
 
+    <string name="about_contact_support">تماس با پشتیبان</string>
 </resources>

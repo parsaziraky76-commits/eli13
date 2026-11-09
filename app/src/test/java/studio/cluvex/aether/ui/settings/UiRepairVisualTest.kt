@@ -107,9 +107,10 @@ class UiRepairVisualTest {
         compose.setContent { AetherTheme { Surface(Modifier.width(400.dp).height(900.dp)) { Capture()
             Column(Modifier.verticalScroll(rememberScrollState())) { AboutPanel(startExpanded = true) }
         } } }
-        compose.onNodeWithText("DOPAMINE").assertIsDisplayed()
+        compose.onNodeWithText("تماس با پشتیبان").assertIsDisplayed()
         compose.onNodeWithText("@Darlingn00").assertIsDisplayed()
-        compose.onNodeWithText("License and credits").performScrollTo().assertIsDisplayed()
-        capture("06-dopamine-about-fa")
+        compose.onNodeWithText("DOPAMINE").assertDoesNotExist()
+        compose.onNodeWithText("مجوز و قدردانی").assertDoesNotExist()
+        capture("06-dopamine-about-support-only-fa")
     }
 }

@@ -81,7 +81,7 @@
 
     <!-- About panel -->
     <string name="about_title">About</string>
-    <string name="about_subtitle">About Dopamine and its licenses</string>
+    <string name="about_subtitle">Contact Dopamine support</string>
 <string name="menu_open">Open menu</string>
     <string name="advanced_open">Open advanced settings</string>
 
@@ -982,11 +982,6 @@
     <string name="no_perm_title">Disable extension permutation</string>
     <string name="no_perm_desc">Keep one fixed order of the extensions instead of Chrome\'s per-handshake shuffle.</string>
     <string name="dopamine_brand">DOPAMINE</string>
-    <string name="about_app_version_label">App version</string>
-    <string name="about_core_version_label">Aether core version</string>
-    <string name="about_hev_version_label">hev-socks5-tunnel version</string>
-    <string name="about_support_id_title">Support ID</string>
-    <string name="about_license_title">License and credits</string>
-    <string name="about_license_body">DOPAMINE is free software released under the GNU AGPL-3.0. It is built on Aether by CluvexStudio (AGPL-3.0), hev-socks5-tunnel by heiher (MIT), Psiphon tunnel core and the Tor pluggable transport Lyrebird. Thank you to all of these projects.</string>
 
+    <string name="about_contact_support">Contact support</string>
 </resources>

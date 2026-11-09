@@ -843,7 +843,7 @@ jobs:
           for key in "${!MAP[@]}"; do
             src="$(find app/build/outputs/apk/release -iname "*${key}*.apk" | head -n1)"
             if [ -n "$src" ]; then
-              cp "$src" "${OUT}/Aether-${VERSION_NAME}-${MAP[$key]}.apk"
+              cp "$src" "${OUT}/Dopamine-${VERSION_NAME}-${MAP[$key]}.apk"
             fi
           done
           echo "Built APKs:"
@@ -863,7 +863,7 @@ jobs:
             echo
             echo "## Verify your download"
             echo
-            echo "Open **About** in the app: it shows the APK SHA-256 and the signing certificate. They must match this list."
+            echo "Compare the SHA-256 below with the APK you downloaded to verify the file integrity."
             echo
             echo '| File | SHA-256 |'
             echo '| --- | --- |'
@@ -887,7 +887,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ startsWith(github.ref, 'refs/tags/') && github.ref_name || format('v{0}-build.{1}', env.VERSION_NAME, github.run_number) }}
-          name: ${{ startsWith(github.ref, 'refs/tags/') && format('Aether {0}', github.ref_name) || format('Aether v{0}', env.VERSION_NAME) }}
+          name: ${{ startsWith(github.ref, 'refs/tags/') && format('Dopamine {0}', github.ref_name) || format('Dopamine v{0}', env.VERSION_NAME) }}
           files: artifacts/*.apk
           make_latest: true
           body_path: ${{ env.RELEASE_BODY }}
