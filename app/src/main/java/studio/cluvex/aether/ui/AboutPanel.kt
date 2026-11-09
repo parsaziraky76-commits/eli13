@@ -33,6 +33,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import studio.cluvex.aether.R
 import studio.cluvex.aether.BuildConfig
+import studio.cluvex.aether.ai.AiTopic
+import studio.cluvex.aether.ui.ai.AiTopicIcon
 
 private val AboutBackground = Color(0xFF0B0716)
 private val AboutCard = Color(0xFF130E24)
@@ -46,6 +48,9 @@ fun AboutPanel(modifier: Modifier = Modifier, startExpanded: Boolean = true) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
+        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.End) {
+            AiTopicIcon(AiTopic.ABOUT)
+        }
         Image(
             painter = painterResource(R.drawable.dopamine_logo),
             contentDescription = "Dopamine logo",
